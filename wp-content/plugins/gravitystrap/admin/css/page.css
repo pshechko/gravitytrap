@@ -1,0 +1,40 @@
+h1 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 15px 4px 0;
+    line-height: 29px;
+}
+.top-buffer {
+    margin-top: 10px;
+}
+ul.custom-sort>li, .btn {
+    width: 100%;
+}
+ul.custom-sort>li .no-items,
+ul.custom-sort>li.no-items .ex-items{
+    display: none;
+}
+ul.custom-sort>li.no-items .no-items{
+	display: initial;
+}
+ul#layout {
+    min-height: 200px;
+    background: white;
+    padding: 10px;
+}
+ul#inputs>li:not(:first-child), 
+ul#elements>li:not(:first-child) {
+    margin-top: 5px;
+}
+ul#layout .item-row>ul {
+    min-height: 50px;
+    border: 1px solid gray;
+    display: block;
+}
+ul#layout .item-col>ul {
+    min-height: 30px;
+    border: 1px solid gray;
+    display: block;
+	background: #cacaca;
+}
