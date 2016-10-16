@@ -1,7 +1,14 @@
 ﻿jQuery( function($) {
+	$( "#inputs" ).gravitySortable({
+		connectWith: ".connectedSortable",
+		copy: true
+	});
+});
+jQuery( function($) {
+	return;
 	$( "#inputs" ).sortable({
 		connectWith: ".connectedSortable"
-	}).disableSelection();
+	});
     $( "#layout" ).sortable({
 		receive: function(e,li) {
 			e.stopPropagation()
@@ -57,7 +64,7 @@
 			copyHelper=null;
 			li.item.replaceWith($('<li class="ui-state-default item-row" type="row"></li>').append(newulRow));
 		} 
-	}).disableSelection();
+	});
 	$( "#elements" ).sortable({
 		connectWith: ".connectedSortable",
 		helper: function(e,li) {
@@ -68,7 +75,7 @@
 			copyHelper && copyHelper.remove();
 		}
 		
-	}).disableSelection();
+	});
 } );
 jQuery( function($) {
 	$('.rules').on('click','#add-rule',function(){
