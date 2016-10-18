@@ -1,1 +1,12 @@
-﻿
+.can-receive {
+    border: 1px solid green !important;
+}
+.candidate {
+    background: #d9ffd9 !important;
+}
+li.gravitytrap-placeholder {
+    width: 100%;
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 10px;
+}

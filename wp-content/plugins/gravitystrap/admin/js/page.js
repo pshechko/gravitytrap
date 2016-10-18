@@ -1,7 +1,22 @@
-﻿jQuery( function($) {
-	$( "#inputs" ).gravitySortable({
-		connectWith: ".connectedSortable",
-		copy: true
+jQuery( function($) {
+    
+        var newRowLi = $('<li class="ui-state-default item-row" type="row"></li>');
+        var newRow = jQuery('<ul/>').gravitySortable({
+                    copy: true,
+                    dropFromOther: true,
+                    allowedToDrop: '[type="col"]'
+                });
+    
+	$( "#elements" ).gravitySortable({
+		copy: true,
+                dropFromItself: false,
+                finalElement: newRowLi.append(newRow)
+	});
+        
+        $( "#layout" ).gravitySortable({
+                dropFromOther: true,
+		dropFrom: '#inputs,#elements',
+                allowedToDrop: '[type="row"]',
 	});
 });
 jQuery( function($) {
