@@ -26,7 +26,7 @@
 	<div class="row top-buffer">
 		<div class="col-md-2 rules">
 			<ul id="inputs" class="custom-sort side">
-			  <li class="ui-state-default btn btn-default no-items">
+			  <li class="ui-state-default btn btn-default no-items input-rule">
 				  <span class="no-items">All items</span>
 				  <span class="ex-items">All other items</span>
 				  </li>
